@@ -1,0 +1,1115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+:root{
+    --primary-color:rgb(31, 30, 30);
+    --secondary-color:rgb(248, 68, 104);
+    --third-color:rgba(245, 246, 252, 0.52);
+    --fourth-color:rgba(17, 16, 17, 0.73);
+    --fifthcolor:rgba(117, 19, 93, 0.73);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Helvetica', sans-serif;
+  
+}
+
+.container{
+  width: 97%;
+  margin:auto;
+  overflow: hidden;
+}
+
+.header{
+    background: white;
+    height:80px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.header-2{
+    display:none;
+}
+
+.headerdiv{
+    display: flex;
+    height:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{ 
+    font-size: 1.3rem;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover:not(.active) {
+   border-bottom: var(--secondary-color) 2px solid;
+   border-top: var(--secondary-color) 2px solid;
+}
+
+.bnblogo{
+    font-size: 22px;
+    width:fit-content;
+}
+
+
+.showcase{ 
+    background-image:  url("/images/hotelroom.jpg");
+    height: 90vh;
+    background-position: 50% 60% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.form-heading{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1.8rem;
+    color: white;
+}
+.form-text{
+    color: white;
+    font-size: 18px;
+}
+
+div.form-card{
+    
+    width:  500px;
+    background-color: rgba(245, 246, 252, 0.8);
+    background-color: rgba(17, 16, 17, 0.5);
+    border-style: none;
+    border-radius: 5px ;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.field-form{
+    border:none;
+    outline: none;
+    width: 100%;
+    padding:10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    font-size: 19px;
+    color: black;
+}
+.form-control{
+    padding: 0;
+    width:400px;
+    margin: auto;
+}
+
+::placeholder{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+.search-btn{
+    padding:10px 23px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 50;
+    background-color: white;
+
+}
+.btn{
+    width: fit-content;
+    margin: auto;
+    padding-top: 8px;   
+}
+.search-btn:hover{
+    transform: translateY(-5px);
+    color: white;
+    background-color: rgba(17, 16, 17, 0.33);
+
+}
+
+.banner{
+    margin-top: 100px;
+    background-image:linear-gradient(to left, rgba(232, 233, 235, 0), rgba(14, 13, 13, 1)), url("images/banner-pic.jpg");
+    height: 70vh;
+    background-position: 10% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;  
+}
+.banner-heading{
+    color: white;
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+.banner-para{
+    color: white;
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+.banner-content{
+    width:365px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+.banner-btn{
+    background: white;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    padding: 8px 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.banner-btn:hover{
+  background: none;
+  color: white;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+}
+
+.video-section{
+    margin-top:80px;
+}
+
+.video-section-upper-heading{
+    background: black;
+    font-size: 2rem;
+    color: white;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 10px 20px;
+    margin: auto;
+}
+.video-section-upper-para{
+    line-height: 1.5;
+    font-size: 17px;
+    padding: 25px 0;
+    text-align: justify;
+
+}
+
+.video-section-lower-para{
+    line-height: 1.5;
+    font-size: 17px;
+    padding: 25px 0;
+    text-align: justify;
+
+}
+.video{
+  width: 820px;
+  height: 445px;
+  margin: auto;
+}
+
+.frame-video{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   border: none;
+}
+
+
+/* ----------------
+----login section----
+-------------------*/
+.login-section{
+    height: 90vh;
+    position: relative;
+}
+.login-card{
+    margin-top: 25px;
+    width: 400px;
+    margin: auto;
+    padding: 40px 10px;
+}
+.login-form{
+   
+    width:450px;
+    border:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+
+}
+.login-card-text{
+    color: white;
+}
+
+.login-card-heading{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    padding-top: 40px;
+    
+}
+
+.login-btn{
+    padding:8px 20px;
+    color: var(--primary-color);
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.login-btn:hover{
+    color:white;
+    border: white 2px solid;
+    background: none;
+}
+/* -------------
+------registration------
+-----------------------*/
+
+.reg-card{
+    width: 450px;
+  padding: 40px 20px;
+}
+.reg-section{
+    position:relative;
+    height: 90vh;
+}
+.reg-form{
+    width:500px;
+    background-image: url(/images/regform1.jpg);
+    
+}
+.reg-card-heading{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    padding-top: 40px;
+}
+
+/* ----------------
+----rooms section----
+-------------------*/
+.rooms-section{
+    display: '';
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    width: 1100px;
+    margin:auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+   
+}
+.room-options{
+    border-bottom: 4px solid var(--fourth-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+ }
+
+
+.room-options:hover{
+    transition: transform 0.2s ease-in;
+    transform: translateY(-15px);
+}
+.room-pics{
+     width: 333px;
+     height: 300px;
+     border-radius: 8px;
+
+ }
+
+.rooms-options-heading{
+    text-align: center;
+    font-size: 21px;
+    padding-top: 23px;
+}
+
+.room-options-para{ 
+    text-align: center;
+    font-size: 17px;
+    padding-top: 3px;
+    padding-bottom: 23px;
+}
+
+/* --------------footer------------*/ 
+.footer-case{
+    background: var(--primary-color);
+    height:80px;
+    position: relative;
+    margin-top: 70px;
+}
+
+.footer-text{
+    font-size: 17px;
+    color: white;
+}
+
+.footer-align{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+/*---------------------------------------------
+-------------------room booking--------------------
+--------------------------------------------*/
+.room-booking{
+margin: 100px 0;
+display: none;
+}
+.aligning{
+    width: 80vw;
+    margin: auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+
+}
+.booking-section-pic{
+
+width: 100%;
+border-radius: 8px;
+
+}
+.flex{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 60px ;
+
+    
+}
+
+.room-1-booking-text{
+    padding: 20px;
+    padding-left: 30px;
+
+}
+
+.room-1-booking-heading{
+
+}
+
+.room-1-booking-para{
+padding-top: 10px;
+text-align: justify;
+padding-right: 20px;
+font-size: 17px;
+}
+
+.booking-form{
+    margin-top: -150px;
+ width: 24vw;
+
+ background-color: white;
+ box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+ border-radius: 6px;
+ 
+}
+
+.booking-card-heading{
+text-align: center;
+font-size: 26px;
+padding: 25px 0;
+}
+
+.booking-card-text{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 4px 0;
+}
+.booking-card{
+    width: 20vw;
+   
+    margin: auto;
+}
+.booking-field-form{
+width: 100%;
+border:none;
+outline: none;
+border-bottom: 1px solid black;
+font-size: 15px;
+padding: 0px 6px;
+margin-bottom: 18px;
+ }
+
+.booking-field-list{
+    width: fit-content;
+margin: auto;
+padding: 20px 0;
+}
+
+.booking-field-list-items{
+    list-style: none;
+}
+
+.booking-btn{
+    margin-bottom: 30px;
+    font-size: 17px;
+    padding: 8px 25px;
+    border-radius: 5px;
+    border-style: none;
+    color:white;
+    background: black;
+}
+.booking-btn:hover{
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+
+}
+
+
+/*-------------------------------- PAYMENT PAGE---------------------------*/
+.payment{
+width:100% ;
+height: 45vh;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+.payment-text{
+    width: fit-content;
+    margin: auto;
+    padding: 2px 13px;
+    font-size: 27px;
+    
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+}
+td{ 
+    padding:10px;
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 1px solid gray;
+    
+  
+}
+
+ 
+th{
+    padding: 13px 0;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+table{
+    width: 90%;
+    margin: auto;
+    border-spacing: 5px;
+}
+
+.booking-table{
+    padding-top: 25px;
+   width: 90%;
+    margin: auto;
+}
+.total-amount{
+    width: fit-content;
+margin: auto;
+font-size: 18px;
+margin-top: 50px;
+}
+
+.payment_btn{
+    margin-bottom: 30px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 17px;
+    padding: 8px 25px;
+    border-radius: 5px;
+    border-style: none;
+    color:white;
+    background: var(--primary-color);
+}
+
+.payment_btn:hover{
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+
+}
+
+.booking-table-mobversion{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------
+-------------------media queries--------------------
+--------------------------------------------*/
+@media (max-width: 768px) {
+    .bnblogo{
+        font-size: 18px;
+    }
+
+  
+    .container{
+        max-width: 700px;
+      }
+    a{
+       font-size: 1.1rem;
+       padding: 6px;
+      } 
+      .showcase{ 
+        height: 95vh;    
+    }
+
+    .form-heading{  
+        padding-bottom: 25px;
+        font-size: 1.6rem;
+    }
+
+    .form-text{
+        font-size: 18px;
+    }
+    
+    div.form-card{
+        
+        width:  420px;
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+    
+    .field-form{
+        padding:7px;
+        margin-top: 4px;
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    .form-control{
+        width:340px; 
+    }
+    .search-btn{
+        padding:8px 16px;
+        font-size: 18px;
+        font-weight: 50;
+    
+    }
+
+
+::placeholder{
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+.banner{
+    margin-top: 90px;
+}
+.banner-heading{
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+.banner-para{
+  
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.banner-content{
+    width:360px;
+    margin-left: 10px;
+}
+.banner-btn{
+
+    padding: 8px 8px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.video-section{
+    margin-top: 70px;
+}
+
+.video-section-upper-heading{
+    font-size: 1.5rem;
+}
+
+.video-section-upper-para,
+.video-section-lower-para{
+    font-size: 17px;
+    font-weight:normal;
+    padding: 25px 20px;
+
+}
+.video{
+  width: 670px;
+  height: 440px;
+}
+
+.footer-case{
+    margin-top: 20px;
+    height:80px;
+}
+.footer-text{
+    font-size: 15px;
+}
+
+/* ---------rooms section------*/
+.grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4vw;
+    width: 90vw;
+}
+.room-pics{
+     width: 43vw;
+     height: 300px;
+ }
+
+.rooms-options-heading{
+font-size: 19px;
+padding-top: 22px;
+}
+
+.room-options-para{ 
+    font-size: 16px;
+    padding-bottom: 22px;
+}
+
+/*------------registration-------*/
+.reg-card{
+    width: 400px;
+  padding: 35px 15px;
+}
+.reg-form{
+    width:450px;
+}
+
+.aligning{
+    width: 88vw;
+}
+.booking-section-pic{
+
+width: 100%;
+}
+
+.flex{
+  
+    grid-template-columns: 55% 45%;   
+}
+
+.room-1-booking-text{
+    padding: 10px;
+    padding-left: 35px;
+
+}
+
+.room-1-booking-heading{
+font-size: 22px;
+}
+
+
+
+.booking-form{
+    margin-top: -130px;
+ width: 36vw;
+}
+
+.booking-card-heading{
+font-size: 24px;
+padding: 25px 0;
+}
+
+.booking-card-text{
+    font-size: 16px;
+}
+.booking-card{
+    width: 28vw;
+}
+.booking-field-form{
+font-size: 14px;
+margin-bottom: 18px;
+ }
+
+.booking-field-list{
+
+padding: 20px 0;
+}
+
+.payment{
+ 
+    height: 60vh;
+    }
+
+.payment-text{
+    font-size: 22px;
+    padding: 2px 8px;
+}   
+   td{ 
+            padding:8px;
+            font-size: 15px;
+        }
+        
+         
+        th{
+            padding: 11px 0;
+            font-size: 13px;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
+
+    /* ------------------------------MOBILE VERSION HEADER-----------------------------*/
+.header{
+    display: none;
+}
+.bnblogo{
+    font-size: 17px;
+    height: fit-content;
+}
+.container{
+    width: 95%;
+}
+
+.header-2{
+    display: block;
+    background: white;
+    min-height:70px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.headerdiv-2{
+    display: flex;
+    height:100%;
+    justify-content: space-between;
+    padding: 25px 0 ;
+    
+    
+}
+.navo-2{
+    font-size: 18px;
+    height: fit-content;
+}
+.navo-2:hover{
+    cursor: pointer;
+    color: grey;
+}
+.mob-header{
+    background-color: white;
+    color: black;
+    padding-top: 0px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   display: none;
+}
+.mob-links{
+    border-bottom: 1px solid black ;
+    padding-bottom: 1px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+.mob-links:hover{
+    color: grey;
+    border-color: grey;
+}
+
+/* ------------------------------MOBILE VERSION HEADER-----------------------------*/
+
+    .showcase{ 
+        height: 90vh;    
+    }
+
+    .form-heading{  
+        padding-bottom: 23px;
+        font-size: 1.2rem;
+    }
+
+    .form-text{
+        font-size: 15px;
+    }
+    
+    div.form-card{
+        
+        width:  80vw;
+        padding-top: 35px;
+       
+    }
+    
+    .field-form{
+        font-size: 15px;
+    }
+    .form-control{
+        width: 70vw; 
+    }
+
+    .search-btn{
+        padding:8px 14px;
+        font-size: 15px;
+    
+    }
+
+
+::placeholder{
+    font-size: 14px;
+}
+
+.banner{
+    margin-top: 70px;
+}
+.banner-heading{
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.banner-para{
+  
+    font-size: 16px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.banner-content{
+    width:min-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-btn{
+    padding: 8px 8px;
+    font-size: 14px;
+
+}
+.banner-btn-mob{
+    width: fit-content;
+    margin: auto;
+}
+
+
+.video-section-upper-heading{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.video{
+  width: 90vw;
+  height: 70vh;
+}
+
+.footer-case{
+    margin-top: 20px;
+    height:80px;
+    top:100%;
+    left:0%;
+    
+}
+.footer-text{
+    font-size: 14px;
+ 
+}
+
+.footer-align{
+   width: fit-content;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/* ---------rooms section------*/
+.grid{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    width: 85vw;
+}
+.room-pics{
+     width: 100%;
+     height: 300px;
+ }
+
+.rooms-options-heading{
+font-size: 18px;
+
+}
+
+.room-options-para{ 
+    font-size: 16px;
+   
+}
+/*----------------------login section-------------*/
+.login-section{
+    height: 80vh;
+}
+.login-card{
+    margin-top: 20px;
+    width: 70vw;
+    padding: 30px 10px;
+}
+.login-form{
+    width: 80vw;
+}
+
+
+.login-card-heading{
+    font-size: 25px;
+    padding-top: 30px;    
+}
+
+.login-btn{
+    padding:8px 16px;
+    font-size: 18px;
+
+}
+.login-card-text{
+    font-size: 16px;
+}
+/* -------------
+------registration------
+-----------------------*/
+
+.reg-card{
+    width: 70vw;
+  padding: 20px 15px;
+}
+
+.reg-form{
+    width: 80vw;
+
+}
+
+.reg-card-heading{
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    padding-top: 35px;
+}
+
+/*---------------------------------------------
+-------------------room booking--------------------
+--------------------------------------------*/
+.room-booking{
+    margin: 60px 0;
+    }
+    .aligning{
+        width: 88vw;
+    }
+    .booking-section-pic{
+    
+    width: 100%;
+    }
+
+    .flex{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 60px ;
+    
+        
+    }
+    
+    .room-1-booking-text{
+        padding: 20px;
+    
+    }
+    
+    .room-1-booking-heading{
+    text-align: center;
+    }
+    
+    .room-1-booking-para{
+    text-align: justify;
+    padding:  10px 5px;
+    font-size: 17px;
+   
+    }
+    
+    .booking-form{
+        margin: auto;
+        margin-top: 0px;
+     width: 70vw;
+    }
+    
+    .booking-card-heading{
+    text-align: center;
+    font-size: 26px;
+    padding: 30px 0;
+    }
+    
+    .booking-card{
+        width: 62vw;
+    }
+  /*----------------payment page-------*/
+
+  .booking-table{
+      display: none;
+  }
+    .payment{
+        height: 90vh;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        }
+        
+        .payment-text{
+            padding: 2px 10px;
+            font-size: 20px;
+        }
+        td{ 
+            padding:10px;
+            font-size: 14px;
+        }
+        
+         
+        th{
+            padding: 11px 0;
+            font-size: 13px;
+        }
+       
+        
+        .booking-table-mobversion{
+            display: block;
+            padding-top: 30px;
+            width: 85%;
+            margin: auto;
+        }
+        
+        .total-amount{
+            font-size: 16px;
+        margin-top: 50px;
+        }
+
+
+        .payment_btn{
+            font-size: 14px;
+            padding: 8px 20px;
+          
+        }
+    }
+/* ------------------- END--------------*/
